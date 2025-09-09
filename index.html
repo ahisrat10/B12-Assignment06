@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="assets/heart.png">
-    <title>Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/tree-favicon.png">
+    <title>Green Earth: Sow the seeds of future today</title>
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles/style.css">
@@ -73,15 +73,50 @@
     <main>
         <!-- Hero Section -->
         <section id="hero-section">
-            <div class="hero bg-base-200 bg-[#CFF0DC] py-16 lg:py-24">
-                <div class="hero-content text-center">
-                    <div class="">
-                        <h1 class="text-5xl font-bold">Plant a Tree, Grow a Future</h1>
-                        <p class="py-6 text-[#00000080]">
-                            Join our mission to plant 1 million trees and make the Earth greener for
-                            future<br>generations.
-                        </p>
-                        <button class="btn bg-[#FACC15] rounded-full text-[#15803D] border-none">Get Involved</button>
+            <div
+                class="flex flex-col lg:flex-row items-center justify-center gap-10 bg-[#CFF0DC] pt-16 lg:pt-24 px-4 lg:px-0">
+                <div>
+                    <img src="assets/hero-leaf1.png" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold">Plant a Tree, Grow a Future</h1>
+                    <p class="py-6 text-[#00000080]">
+                        Join our mission to plant 1 million trees and make the Earth greener for
+                        future<br>generations.
+                    </p>
+                    <button class="btn bg-[#FACC15] rounded-full text-[#15803D] border-none">Get Involved</button>
+                </div>
+                <div>
+                    <img src="assets/hero-leaf2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tree Selection Section -->
+        <section id="tree-selection" class="my-20 px-4 lg:px-25">
+            <h2 class="text-center font-bold text-3xl">Choose Your Trees</h2>
+            <div class="flex flex-col lg:flex-row justify-between gap-10 mt-10">
+                
+                <div class="border-2 w-full lg:w-1/5 p-4 rounded-lg">
+                    <h4 class="font-bold text-2xl p-2">Categories</h4>
+                    <div id="categories-list" class="flex flex-col gap-2 mt-4  overflow-hidden">
+                        <p class="text-white bg-[#15803D]">All Trees</p>
+                        <!-- to be filled by API call -->
+                        <!-- loadAllCategories(); -->
+                    </div>
+                </div>
+
+                <div class="border-2 w-full lg:w-3/5 p-4 rounded-lg">
+                    <div id="single-plant-card" class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                        <!-- To be filled by API calls, 3 Grid card -->
+                        <!-- loadAllPlants(); -->
+                    </div>
+                </div>
+
+                <div class="border-2 w-full lg:w-1/5 p-4 rounded-lg">
+                    <h4>Your Cart</h4>
+                    <div>
+                        <!-- to be filled by js API call -->
                     </div>
                 </div>
             </div>
@@ -89,7 +124,6 @@
     </main>
 
     <footer>
-
     </footer>
 
     <script src="scripts/script.js"></script>
